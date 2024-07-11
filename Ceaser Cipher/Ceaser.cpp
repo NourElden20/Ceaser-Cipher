@@ -57,13 +57,13 @@ void Ceaser::RunTool() {
 		cout << "3) Exit\n";
 		cout << "Your Choice : ";
 	start:
-		int Choice = 0;
+		char Choice ; 
 		cin >> Choice;
 		char c;
 		string text;
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
 		switch (Choice) {
-		case 1:
+		case '1':
 			cout << "Enter Text to be Encrypted : ";
 			getline(cin, text);
 			cout << "Text After Encryption: " << Encryption(text) << '\n';
@@ -83,7 +83,7 @@ void Ceaser::RunTool() {
 				goto check;
 			}
 
-		case 2:
+		case '2':
 			cout << "Enter Text to be Decrypted : ";
 			getline(cin, text);
 			cout << "Text After Decryption: " << Decryption(text) << '\n';
@@ -101,7 +101,7 @@ void Ceaser::RunTool() {
 				cout << "Wrong Input, Try again\n";
 				goto check2;
 			}
-		case 3:
+		case '3':
 			cout << "Thank You";
 			return;
 
