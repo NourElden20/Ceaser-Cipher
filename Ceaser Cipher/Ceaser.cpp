@@ -49,16 +49,16 @@ string Ceaser::Decryption(string text)
 }
 
 void Ceaser::RunTool() {
-	cout << "======== Ceaser Cipher Tool ======== \n";
 
 	while (true) {
+	cout << "======== Ceaser Cipher Tool ======== \n";
 		cout << "1) Encrypt Text\n";
 		cout << "2) Decrypt Text\n";
 		cout << "3) Exit\n";
 		cout << "Your Choice : ";
 	start:
-		char Choice ; 
-		cin >> Choice;
+		char Choice;	
+		cin >> Choice;				
 		char c;
 		string text;
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
